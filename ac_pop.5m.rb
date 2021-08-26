@@ -8,7 +8,6 @@
 
 require "net/http"
 require "json"
-require "time"
 
 def pipe(input, ops)
   ops.reduce(input) { |v,l| l.(v) }
